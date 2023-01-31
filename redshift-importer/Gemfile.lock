@@ -1,12 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.3)
-      i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
+    activesupport (6.0.6.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
     aws-sdk (2.1.15)
       aws-sdk-resources (= 2.1.15)
     aws-sdk-core (2.1.15)
@@ -14,17 +14,19 @@ GEM
     aws-sdk-resources (2.1.15)
       aws-sdk-core (= 2.1.15)
     color (1.7.1)
+    concurrent-ruby (1.2.0)
     fastercsv (1.5.5)
-    i18n (0.7.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
     jmespath (1.0.2)
       multi_json (~> 1.0)
-    json (1.8.3)
+    json (2.6.3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mailfactory (1.4.0)
       mime-types (>= 1.13.1)
     mime-types (2.6.1)
-    minitest (5.8.0)
+    minitest (5.17.0)
     multi_json (1.11.2)
     pdf-writer (1.1.8)
       color (>= 1.4.0)
@@ -43,17 +45,18 @@ GEM
       mailfactory (>= 1.2.3)
       rubyzip (>= 0.9.1)
       ruport (>= 1.6.0)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     thrift (0.9.0)
     transaction-simple (1.4.0.2)
-    tzinfo (1.2.2)
+    tzinfo (1.2.11)
       thread_safe (~> 0.1)
+    zeitwerk (2.6.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (= 4.2.3)
+  activesupport (= 6.0.6.1)
   aws-sdk
   mail (= 2.6.3)
   pg (= 0.18.2)
